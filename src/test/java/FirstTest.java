@@ -23,11 +23,10 @@ public class FirstTest {
         System.out.println("before method");
     }
 
-    @Test(groups = "first")
+    @Test
     @Parameters("name")
     void testOne(String name) {
         System.out.println(name);
-
     }
 
     @Test
@@ -40,12 +39,12 @@ public class FirstTest {
         softAssert.assertAll();
     }
 
-    @Test(groups = "first")
+    @Test
     void testThree() {
         System.out.println("test three");
     }
 
-    @Test(groups = "first")
+    @Test
     void testFour() {
         System.out.println("test Four");
     }
@@ -54,15 +53,14 @@ public class FirstTest {
     @Test(priority = 7, description = "Test Five Hello")
     void testFive() {
         System.out.println("test Five");
-
     }
 
-    @Test(groups = "second")
+    @Test(dependsOnMethods = "testTwo")
     void testSix() {
         System.out.println("test Six");
     }
 
-    @Test(groups = "second")
+    @Test
     void testSeven() {
         System.out.println("test Seven");
     }

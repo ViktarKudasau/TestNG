@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da9e1324-5fbf-497a-bd47-7cd0c99e979e" name="Changes" comment="">
+    <list default="true" id="da9e1324-5fbf-497a-bd47-7cd0c99e979e" name="Changes" comment="Add &lt;groups&gt; to the tests.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests.xml" afterDir="false" />
     </list>
@@ -80,6 +78,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstTest.testSix" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestNG" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testSix" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FirstTest.testTwo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestNG" />
       <option name="PACKAGE_NAME" value="" />
@@ -95,6 +105,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/HP/TestNG/src/test/java/tests.xml" />
+        <item itemvalue="TestNG.FirstTest.testSix" />
         <item itemvalue="TestNG.FirstTest.testTwo" />
         <item itemvalue="TestNG.FirstTest.testFive" />
         <item itemvalue="TestNG.FirstTest" />
@@ -110,6 +121,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679933388888</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add &lt;groups&gt; to the tests.xml">
+      <created>1680073117183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680073117183</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add &lt;groups&gt; to the tests.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &lt;groups&gt; to the tests.xml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestNG$FirstTest.ic" NAME="FirstTest Coverage Results" MODIFIED="1679934430431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
