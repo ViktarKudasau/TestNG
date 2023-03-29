@@ -1,3 +1,4 @@
+import org.example.Main;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -23,13 +24,13 @@ public class FirstTest {
         System.out.println("before method");
     }
 
-    @Test
-    @Parameters("name")
-    void testOne(String name) {
-        System.out.println(name);
+    @Test(expectedExceptions = NoSuchMethodException.class)
+        void testOne() throws NoSuchMethodException {
+        System.out.println("test One stated");
+        Main.getException(1);
     }
 
-    @Test
+    @Test(enabled = false)
     void testTwo() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(true, "assert true");
@@ -39,23 +40,24 @@ public class FirstTest {
         softAssert.assertAll();
     }
 
-    @Test
-    void testThree() {
-        System.out.println("test three");
+    @Test(enabled = false)
+    @Parameters("name")
+    void testThree(String name) {
+        System.out.println(name);
     }
 
-    @Test
+    @Test(enabled = false)
     void testFour() {
         System.out.println("test Four");
     }
 
 
-    @Test(priority = 7, description = "Test Five Hello")
+    @Test(enabled = false)
     void testFive() {
         System.out.println("test Five");
     }
 
-    @Test
+    @Test(enabled = false)
     void testSix() {
         System.out.println("test Six");
     }
