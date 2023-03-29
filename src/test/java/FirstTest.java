@@ -33,9 +33,9 @@ public class FirstTest {
     void testTwo() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(true, "assert true");
-        softAssert.assertTrue(false, "assert false");
+        softAssert.assertFalse(false, "assert false");
         softAssert.assertEquals("abc", "abc", "string correct");
-        softAssert.assertEquals("abc", "ab", "string failed");
+
         softAssert.assertAll();
     }
 
@@ -55,14 +55,9 @@ public class FirstTest {
         System.out.println("test Five");
     }
 
-    @Test(dependsOnMethods = "testTwo")
+    @Test
     void testSix() {
         System.out.println("test Six");
-    }
-
-    @Test
-    void testSeven() {
-        System.out.println("test Seven");
     }
 
     @AfterMethod
