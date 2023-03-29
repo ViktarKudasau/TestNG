@@ -36,13 +36,13 @@ public class FirstTest {
         softAssert.assertTrue(true, "assert true");
         softAssert.assertFalse(false, "assert false");
         softAssert.assertEquals("abc", "abc", "string correct");
-
         softAssert.assertAll();
     }
 
-    @Test(enabled = false)
+    @Test
     @Parameters("name")
     void testThree(String name) {
+        System.out.println("test 3 stated");
         System.out.println(name);
     }
 
@@ -50,7 +50,6 @@ public class FirstTest {
     void testFour() {
         System.out.println("test Four");
     }
-
 
     @Test(enabled = false)
     void testFive() {
@@ -67,20 +66,20 @@ public class FirstTest {
         System.out.println("after method");
     }
 
-   /* @DataProvider(name = "test1")
-    public static Object[][] primeNumbers() {
-        return new Object[][] {{2, true}, {6, false}, {19, true}, {22, false}, {23, true}};
-    }
     @DataProvider(name = "test1")
     public static Object[][] primeNumbers() {
-        return new Object[][] { { new Bean("hi I am the bean", 111) } };
+        return new Object[][] {
+                {2, true, "Hello"},
+                {6, false, "Hi"},
+                {19, true, "Bye"},
+                {22, false, "Morning"},
+                {23, true, "Good night"}
+        };
     }
-
     @Test(dataProvider = "test1")
-    public void testMethod(Bean myBean) {
-        System.out.println(myBean.getVal() + " " + myBean.getI());
+    public void testMethod(int iV, boolean bV, String sV) {
+        System.out.println(iV + " " + bV + " " + sV);
     }
-}   */
 
     @AfterTest
     void afterTest () {

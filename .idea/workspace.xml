@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da9e1324-5fbf-497a-bd47-7cd0c99e979e" name="Changes" comment="Add 'parallel =&quot;methods&quot; thread-count =&quot;3&quot; ' to the suite tests.xml">
+    <list default="true" id="da9e1324-5fbf-497a-bd47-7cd0c99e979e" name="Changes" comment="1)Add  the method &quot;getException&quot; to the &quot;Main.class&quot;&#10;2)Add &quot;expectedExceptions&quot; to the &quot;FirstTest&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests.xml" afterDir="false" />
     </list>
@@ -45,7 +45,7 @@
     "last_opened_file_path": "C:/Users/HP/TestNG"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.C:/Users/HP/TestNG/src/test/java/tests.xml">
+  <component name="RunManager" selected="TestNG.FirstTest.testMethod">
     <configuration name="C:/Users/HP/TestNG/src/test/java/tests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestNG" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/tests.xml" />
@@ -56,11 +56,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testFive" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestNG" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testFive" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.testMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestNG" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -92,25 +103,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testTwo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestNG" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testTwo" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FirstTest.testMethod" />
         <item itemvalue="TestNG.C:/Users/HP/TestNG/src/test/java/tests.xml" />
         <item itemvalue="TestNG.FirstTest.testOne" />
+        <item itemvalue="TestNG.FirstTest" />
         <item itemvalue="TestNG.FirstTest.testSix" />
-        <item itemvalue="TestNG.FirstTest.testTwo" />
-        <item itemvalue="TestNG.FirstTest.testFive" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680076146002</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1)Add  the method &quot;getException&quot; to the &quot;Main.class&quot;&#10;2)Add &quot;expectedExceptions&quot; to the &quot;FirstTest&quot;">
+      <created>1680083544608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680083544608</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +169,8 @@
     <MESSAGE value="Add &lt;groups&gt; to the tests.xml" />
     <MESSAGE value="Add &quot;dependsOnMethods&quot; to the annotation &quot;@Test&quot;" />
     <MESSAGE value="Add 'parallel =&quot;methods&quot; thread-count =&quot;3&quot; ' to the suite tests.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 'parallel =&quot;methods&quot; thread-count =&quot;3&quot; ' to the suite tests.xml" />
+    <MESSAGE value="1)Add  the method &quot;getException&quot; to the &quot;Main.class&quot;&#10;2)Add &quot;expectedExceptions&quot; to the &quot;FirstTest&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="1)Add  the method &quot;getException&quot; to the &quot;Main.class&quot;&#10;2)Add &quot;expectedExceptions&quot; to the &quot;FirstTest&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestNG$FirstTest.ic" NAME="FirstTest Coverage Results" MODIFIED="1679934430431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
